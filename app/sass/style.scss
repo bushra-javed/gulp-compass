@@ -1,0 +1,145 @@
+@import "./partials/variables";
+@import "./partials/base";
+@import "./partials/layouts";
+@import "./partials/functions";
+//varibales
+@import "compass";
+  @import "compass/css3";
+
+
+body {
+    background-color: $body-bg;
+    font-family: $main-font;
+
+    text-align: center;
+    color:black;
+}
+
+.button{
+
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+    // color:red;
+}
+
+.container {
+    // width: $container;
+    margin: auto;
+    padding: 0 20px;
+    // border: 1px solid red;
+}
+
+
+header#main-header {
+    padding: 1em;
+    background: $primary-color;
+    color: set-text-color($primary-color);
+
+    h1 {
+        font-size: 40px;
+    }
+
+}
+
+// end of hearer section
+
+
+nav#main-nav {
+    background-color: $secondary-color;
+    height: 40px;
+
+    ul {
+        list-style: none;
+padding-top: 10px;
+
+    }
+
+    li {
+        margin-right: 40px;
+        display: inline;
+        //float: left
+    }
+
+    a {
+        color:#fff;
+
+        &:hover {
+            color: #ccc;
+        }
+
+    }
+
+}
+
+.section{
+    padding:$section-padding;
+h1{
+    margin-bottom: 30px;
+}
+}
+
+
+
+#section-a{
+    @extend .section;
+
+background-color: $light-color;
+color:set-text-color($light-color);
+}
+
+
+#section-b{
+    @extend .section;
+background-color: $dark-color;
+
+color:set-text-color($dark-color);
+
+
+}
+
+
+
+
+
+.button-a{
+    @extend .button;
+    background-color: $primary-color;
+    color:set-text-color($primary-color);
+    &:hover{
+        text-decoration: none;
+        background-color: orange;
+    
+        color:set-text-color(orange);
+    }
+    
+}
+
+.button-b{
+    @extend .button;
+    background-color: $light-color;
+    color:set-text-color($light-color);
+&:hover{
+    text-decoration: none;
+    background-color: orange;
+
+    color:set-text-color(orange);
+}
+}
+
+
+
+.kkkkk{
+    color:purple;
+}
+
+
+.bushra.container{
+    border: 1px solid red;
+}

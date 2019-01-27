@@ -29,17 +29,24 @@ article p a:visited {
   background-color: #1c4a5a;
   box-shadow: 1px 4px 4px #444444;
 }
-.navbar-custom .topp, .navbar-default .topp {
-  border: 1px solid red;
-  height: 100px;
-  width: 100%;
-  display: block;
-}
 .navbar-custom .navbar-brand, .navbar-default .navbar-brand {
   padding-left: 30px;
 }
 .navbar-custom .navbar-brand img, .navbar-default .navbar-brand img {
   height: 50px;
+}
+.navbar-custom .navbar-toggler.custom-toggler, .navbar-default .navbar-toggler.custom-toggler {
+  margin-right: 25px;
+  border: 1px solid #fff;
+}
+.navbar-custom .navbar-toggler.custom-toggler .navbar-toggler-icon, .navbar-default .navbar-toggler.custom-toggler .navbar-toggler-icon {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  margin: auto;
+}
+.navbar-custom .navbar-toggler.custom-toggler:focus, .navbar-default .navbar-toggler.custom-toggler:focus, .navbar-custom .navbar-toggler.custom-toggler:active, .navbar-default .navbar-toggler.custom-toggler:active {
+  outline: none;
 }
 .navbar-custom .navbar-nav li.active a, .navbar-default .navbar-nav li.active a {
   color: #fff;
@@ -59,7 +66,7 @@ article p a:visited {
   text-align: center;
   font-weight: 300;
   padding-top: 10px;
-  padding: 10px  25px 0 25px !important;
+  padding: 10px 25px 0 25px !important;
 }
 .navbar-custom .navbar-nav li a:hover, .navbar-default .navbar-nav li a:hover {
   color: #EA6045;
@@ -72,20 +79,6 @@ article p a:visited {
   background-color: rgba(12, 184, 182, 0.21);
   background-color: #286a81;
   border-bottom: 3px solid #EA6045;
-}
-
-.navbar-toggler.custom-toggler {
-  margin-right: 25px;
-  border: 1px solid #fff;
-}
-.navbar-toggler.custom-toggler .navbar-toggler-icon {
-  color: #FFFFFF;
-  font-size: 1.5rem;
-  line-height: 1.5em;
-  margin: auto;
-}
-.navbar-toggler.custom-toggler:focus, .navbar-toggler.custom-toggler:active {
-  outline: none;
 }
 
 #wrapper {

@@ -19,10 +19,10 @@ gulp.task('compass', function() {
   gulp.src('app/sass/*.scss')
     .pipe(compass({
       config_file: './config.rb',
-      css: 'dist/css',
+      css: 'docs/css',
       sass: 'app/sass'    //'../app/sass'
     }))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(browserSync.stream());
 });
 
@@ -35,7 +35,7 @@ gulp.task('compass', function() {
 gulp.task('imageMin',()=>
 gulp.src('app/images/*')
 .pipe(imagemin())
-.pipe(gulp.dest('dist/images'))
+.pipe(gulp.dest('docs/images'))
 );
 
 //minify js   
@@ -44,7 +44,7 @@ gulp.src('app/images/*')
 gulp.task('minify',function(){
     gulp.src('app/js/*.js')
    .pipe(uglify())
-   .pipe(gulp.dest('dist/js'));
+   .pipe(gulp.dest('docs/js'));
 });
 
 //compile sass
@@ -62,8 +62,8 @@ gulp.task('minify',function(){
 gulp.task('copyHtml',function(){
 
     return gulp.src(['app/*.html'])
-            .pipe(gulp.dest('dist'))
-            .pipe(gulp.dest('./'))
+            .pipe(gulp.dest('docs'))
+            // .pipe(gulp.dest('./'))
             .pipe(browserSync.stream());
     });
 
@@ -71,7 +71,7 @@ gulp.task('copyHtml',function(){
 // Watch Sass & Serve
 gulp.task('serve', ['compass','copyHtml'], function() {
     browserSync.init({
-        server: "./dist"  
+        server: "./docs"  
     });
     // gulp.watch(['app/sass/*.scss'], ['sass']);
     gulp.watch(['app/sass/*.scss'], ['compass']);

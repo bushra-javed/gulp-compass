@@ -16,6 +16,14 @@ $main-green: #00647D;
 $main-orange: orange;
 $alice-blue: #F0F8FF;
 $ash-gray: #B2BEB5;
+
+
+$section-padding:20px;
+
+
+
+//standard method of colors varibles
+
 $body-bg:#fff;
 $main-font:"Arial";
 
@@ -24,16 +32,22 @@ $secondary-color:#009a9a;
 $light-color:#f4f4f4;
 $dark-color:#333;
 
-$main-orange:#EA6045;
-$main-green:rgba(28, 74, 90, 1);
-
-// height and width
-// $container:100%;
-$section-padding:20px;
-//font variables
-//function
-//$main-green:green;
-
+$color-primary:	#00647D;//$patina;
+$color-accent:	#EA6045;//$hopbush;
+$color-shadow:	rgba($black, .125);
+// $color-background:	$white;
+// $color-background-shade:	$red;
+// $color-background-invert:	$hopbush;
+// $color-text:	darken($pale-sky, 15);
+// $color-text-weak:	$regent-grey;
+// $color-text-strong:	$midnight-blue;
+// $color-text-heading:	$regent-grey;
+// $color-text-invert:	rgba($color-background, .75);
+// $color-text-strong-invert:	$color-background;
+// $color-text-link:	$color-primary;
+// $color-text-link-visited:	$bouquet;
+// $color-text-link-hover:	$midnight-blue;
+// $color-border:	$iron;
 
 
 

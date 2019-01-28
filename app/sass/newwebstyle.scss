@@ -52,7 +52,7 @@
       font-size: 30px;
       // line-height: 50px;
       color: red;
-      // color: $main-green;
+      // color: $color-primary;
       text-transform: uppercase;
       font-weight: bold;
 
@@ -147,8 +147,8 @@
       line-height: 1.7em;
       width: 120px;
       li {
-        border-bottom: 2px solid $main-green;
-        border-color: darken($main-green, 70%);
+        border-bottom: 2px solid $color-primary;
+        border-color: darken($color-primary, 70%);
 
         &:last-child {
           border-bottom: none;
@@ -177,7 +177,7 @@
         }
 
         &:nth-child(6) {
-          background-color: adjust-hue($main-green, 90dg);
+          background-color: adjust-hue($color-primary, 90dg);
         }
 
         &:nth-child(7) {
@@ -185,7 +185,7 @@
         }
 
         &:nth-child(8) {
-          background-color: adjust-color($main-green, $red:0, $green:140, $blue:0);
+          background-color: adjust-color($color-primary, $red:0, $green:140, $blue:0);
         }
 
         &:nth-child(9) {
@@ -193,7 +193,7 @@
         }
 
         &:nth-child(10) {
-          background-color: adjust-hue($main-green, 90dg);
+          background-color: adjust-hue($color-primary, 90dg);
         }
 
         &:nth-child(11) {
@@ -202,7 +202,7 @@
 
         &:nth-child(12) {
           background-color: grayscale($orange);
-          background-color: adjust-hue($main-green, 90dg);
+          background-color: adjust-hue($color-primary, 90dg);
         }
 
 
@@ -214,7 +214,7 @@
         &:nth-child(14) {
           background-color: grayscale($orange);
 
-          background-color: red;//adjust-hue($main-green, 90dg);
+          background-color: red;//adjust-hue($color-primary, 90dg);
         }
 
         a {
@@ -223,7 +223,7 @@
           padding: 2px 20px;
           display: block;
           opacity: 7;
-          color: $main-green;
+          color: $color-primary;
 
           &:hover {
             opacity: 1;
@@ -332,7 +332,7 @@ footer {
 
 %main-green-gradient {
   
-  @include background-image(linear-gradient(left,$main-green 60%, $white,$red,green));
+  @include background-image(linear-gradient(left,$color-primary 60%, $white,$red,green));
 }
 
 

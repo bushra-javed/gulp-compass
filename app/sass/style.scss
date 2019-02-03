@@ -1,14 +1,15 @@
-@import "./partials/variables";
-@import "./partials/base";
-@import "./partials/layouts";
-@import "./partials/functions";
-//varibales
+@import "./variables";
+@import "./0-plugins/plugins-dir";
+@import "./1-base/base-dir";
+@import "./2-layouts/layouts-dir";
+@import "./3-components/components-dir";
+@import "./6-abstracts/abstract-dir";
+// @import "./partials/normalize";
 @import "compass";
-  @import "compass/css3";
+ @import "compass/css3";
 
 
 body {
-    background-color: $body-bg;
     font-family: $main-font;
 
     text-align: center;
@@ -25,22 +26,19 @@ body {
 
 a {
     text-decoration: none;
-    color: $dark-color;
-    // color:red;
+    color: $color-dark;
 }
 
 .container {
-    // width: $container;
     margin: auto;
     padding: 0 20px;
-    // border: 1px solid red;
 }
 
 
 header#main-header {
     padding: 1em;
-    background: $primary-color;
-    color: set-text-color($primary-color);
+    background: $color-primary;
+    color: set-text-color($color-primary);
 
     h1 {
         font-size: 40px;
@@ -52,7 +50,7 @@ header#main-header {
 
 
 nav#main-nav {
-    background-color: $secondary-color;
+    background-color: $color-secondary;
     height: 40px;
 
     ul {
@@ -90,16 +88,16 @@ h1{
 #section-a{
     @extend .section;
 
-background-color: $light-color;
-color:set-text-color($light-color);
+background-color: $color-light;
+color:set-text-color($color-light);
 }
 
 
 #section-b{
     @extend .section;
-background-color: $dark-color;
+background-color: $color-dark;
 
-color:set-text-color($dark-color);
+color:set-text-color($color-dark);
 
 
 }
@@ -110,8 +108,8 @@ color:set-text-color($dark-color);
 
 .button-a{
     @extend .button;
-    background-color: $primary-color;
-    color:set-text-color($primary-color);
+    background-color: $color-primary;
+    color:set-text-color($color-primary);
     &:hover{
         text-decoration: none;
         background-color: orange;
@@ -123,8 +121,8 @@ color:set-text-color($dark-color);
 
 .button-b{
     @extend .button;
-    background-color: $light-color;
-    color:set-text-color($light-color);
+    background-color: $color-light;
+    color:set-text-color($color-light);
 &:hover{
     text-decoration: none;
     background-color: orange;

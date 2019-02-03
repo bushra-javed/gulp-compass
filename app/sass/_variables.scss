@@ -1,0 +1,85 @@
+$h1-font:1.8rem;
+ $h2-font:1.6rem;
+ $h3-font:1.5rem;
+ $h4-font:1.4rem;
+ $h5-font:1.2rem;
+ $h6-font:1.1rem;
+ $a-font:1rem;
+ $li-font:1rem;
+ $button-font:1rem;
+ $i-font:1rem ;
+ $span-font:1rem ;
+  
+$p-font:1rem;
+:root{
+    font-size: 20px;
+}
+
+$red: #FF0000;
+$white: #FFFFFF;
+$gray: #808080;
+$pink: #FFCBDB;
+$brown: #964B00;
+$orange: #FF7F00;
+$yellow: #FFFF00;
+$green: #00FF00;
+$cyan: #00FFFF;
+$blue: #0000FF;
+$violet: #7F00FF;
+$black: #000000;
+$duke-blue: #001A57;
+$blue-gray: #6699CC;
+$main-green: #00647d;
+$main-orange: orange;
+$alice-blue: #F0F8FF;
+$ash-gray: #B2BEB5;
+
+// $primary-main-orange:#EA6045;
+// $main-green:rgba(28, 74, 90, 1);
+
+$section-padding:20px;
+
+
+$body-bg:#fff;//standard method of colors varibles
+$main-font:'Arial';
+
+
+//main-four colors of design scheme
+
+$color-primary:	#565656;//$patina;
+$color-secondary:#D7CEC7;
+$color-light:#c09f80;
+$color-dark:#76323f;
+
+$padding-section:2rem;
+$margin-section:2rem auto;
+// navbar colors
+
+$font-family-navbar:'arial';
+ $color-navbar:#fff;
+
+$color-navbar-link:$color-dark;
+$color-navbar-link-active:$color-dark;
+ $color-navbar-link-hover:$color-dark;
+ $color-navbar-link-focus:$color-dark;
+ $color-toggle-icon:$color-dark;
+$color-toggle-icon-border:$color-dark;
+$color-accent:	#EA6045;//$hopbush;
+$color-shadow:	rgba($black, .125);
+// $color-background:	$white;
+// $color-background-shade:	$red;
+// $color-background-invert:	$hopbush;
+// $color-text:	darken($pale-sky, 15);
+// $color-text-weak:	$regent-grey;
+// $color-text-strong:	$midnight-blue;
+// $color-text-heading:	$regent-grey;
+// $color-text-invert:	rgba($color-background, .75);
+// $color-text-strong-invert:	$color-background;
+// $color-text-link:	$color-primary;
+// $color-text-link-visited:	$bouquet;
+// $color-text-link-hover:	$midnight-blue;
+// $color-border:	$iron;
+
+
+
+$default-text-color:$black !default;

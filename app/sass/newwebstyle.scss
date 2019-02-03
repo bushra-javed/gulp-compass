@@ -1,7 +1,9 @@
-@import "./partials/variables";
-@import "./partials/base";
-@import "./partials/layouts";
-@import "./partials/functions";
+@import "./variables";
+@import "./0-plugins/plugins-dir";
+@import "./1-base/base-dir";
+@import "./2-layouts/layouts-dir";
+@import "./3-components/components-dir";
+@import "./6-abstracts/abstract-dir";
 // @import "./partials/normalize";
 @import "compass";
  @import "compass/css3";
@@ -9,130 +11,75 @@
 
 
 
-#wrapper {
-  background: white;
-  margin: 0 auto;
+
   
-  .container {
-    
-    border: 11px soli  green;
-    // max-width: 800px;
-  }
-}
-
-.flex-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-
-  //reverse-row  // column // reverse-column 
-  flex-wrap: nowrap;
-
-  // | wrap | wrap-reverse;
-  //justify-content: center; //space-around;
-}
-
-.header {
-
-  padding-top: 10px;
-
-  .flex-start {
-    @extend .flex-wrapper;
-    list-style: none;
-    // justify-content: flex-start;
-    margin-left: 30px;
-
-    img {
-      height: 50px;
-      width: 50px;
-    }
+  
 
 
-    span {
-      font-size: 30px;
-      // line-height: 50px;
-      color: red;
-      // color: $color-primary;
-      text-transform: uppercase;
-      font-weight: bold;
 
-    }
 
-  }
-
-  .flex-end {
-    @extend .flex-wrapper;
-    list-style: none;
-
-    input {
-      width: 400px;
-    }
-
-    button {
-      background-color: #00647D;
-      width: 100px;
-      margin-left: 10px;
-      padding: 10px 12px;
-      font: 18px sans-serif;
-      text-decoration: none;
-      border: 1px solid #000;
-      border-color: #aaa #444 #444 #aaa;
-      color: #FFF;
-
-      &:hover {
-        background-color: lighten(#fff, $amount: 10);
-        background-color: complement(green);
-        color: set-text-color(#fff);
-        border: 1px solid red;
-        
-
-      }
-    }
-
-  }
-}
 
 .navbar-default {
 @extend .navbar-custom;
+border-top: 3px solid $color-dark;
 }
 
 
-#horz-nav {
-  @extend .flex-wrapper;
-  background-color: #00647D;
-  max-width: 100%;
+.container-fluid{
+  margin-top: 80px;
+section#section-1{
+  .section-1
+  {
+    .bg-image{
+      // position: relative;
+      background: url("../images/family-banner1.jpg") center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .wrapper{
+position: relative;
+top:0;
+left:0;
+// border: 11px solid green;
+        .bg-path{
+          
+          // -webkit-clip-path: circle(53.5% at 50% 18%);
+          // clip-path: circle(53.5% at 50% 18%); 
 
-  height: 45px;
-  margin-bottom: 10px;
-  // @extend %main-green-gradient;
 
-}
 
-#horz-nav {
-  ul {
-    margin-left: 40px;
-    padding-top: 10px;
-    list-style: none;
-
-    li {
-      display: inline-block;
-      margin-right: 20px;
-
-      a {
-        text-decoration: none;
-        color: #FFF;
-        padding-left: 10px;
-
-        a:hover {
-          color: $orange;
+          -webkit-clip-path: polygon(100% 0, 50% 100%, 0 100%, 0 27%, 23% 0);
+clip-path: polygon(100% 0, 50% 100%, 0 100%, 0 27%, 23% 0);
+          background-color:$color-dark;// $color-secondary;
+          height: 550px;
+          width: 70%;
+          opacity: 1;
+          z-index: -11;
+          // top:40px;
+          //
+        
+          .inner{
+            position: absolute;
+    
+    top:80px;
+            z-index: 99;
+            // border: 11px solid red;
+            // height: 110vh;
+            // width: 100%;
+            color:#fff;
+            padding:$padding-section;
+            h1{
+              text-align: center;
+              color:$color-secondary;
+            }
+          }
+     
         }
-      }
-
+     }     
+     
     }
   }
 }
-
-
+}
 
 
 

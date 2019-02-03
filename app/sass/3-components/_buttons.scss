@@ -1,0 +1,39 @@
+
+
+
+.button 
+{
+
+    outline: none;
+    border:1px solid transparent;
+
+    font-size: $button-font;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    padding: .8em 1.2em;
+    background-color: $color-secondary;
+    border-radius: .19em;
+    transition: all ease-in-out 300ms;
+    text-decoration: none;
+    color: set-text-color($color-secondary);
+    font-family: sans-serif;
+    
+    
+   
+    &:hover {
+        background-color: darken($color-secondary,10%);
+        box-shadow: -2px 2px 0 #fff;
+        color: set-text-color($color-secondary);
+    }
+    
+    
+    &:active{
+        
+               position: relative;
+                top: 2px;
+                left: -2px;
+    }
+}
+
+

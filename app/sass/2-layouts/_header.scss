@@ -1,0 +1,79 @@
+.navbar-custom {
+    // margin-bottom: 70px;
+    padding: 0;
+    font-family: $font-family-navbar;
+    font-weight: 600;
+    // border:1px solid red;
+    background-color:$color-navbar;
+    box-shadow: 1px 3px 2px 2px #444444;
+  
+    .navbar-brand {
+        // padding-left: 30px;
+  
+        img {
+            height: 50px;
+        }
+    }
+  
+    .navbar-toggler.custom-toggler {
+        margin-right: 25px;
+        .navbar-toggler-icon {
+            color: $color-toggle-icon;
+            font-size: 1.5rem;
+            line-height: 1.5em;
+            margin: auto;
+        }
+        border:1px solid $color-toggle-icon;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+    .navbar-nav {
+  
+        li.active {
+            a {
+                color: $color-navbar-link;
+                text-transform: uppercase;
+                background-color: darken($color-secondary, 10%);
+                // rgba(12, 184, 182, 0.21);
+  
+                &:focus,
+                &:hover {
+                    background-color: darken($color-secondary, 5%);
+                }
+  
+            }
+        }
+  
+        li {
+            a {
+                color: $color-navbar-link;
+                text-transform: uppercase;
+                font-size: 14px;
+                box-sizing: border-box;
+                height: 60px;
+
+                line-height: 40px;
+                text-align: center;
+                font-weight: 300;
+                padding-top: 10px;
+                padding: 10px 25px 0 25px !important;
+  
+                &:hover {
+                    // font-weight: 700;
+                    color: $color-navbar-link;
+                    background-color: lighten($color-secondary, 5%);
+  
+                    border-bottom: 3px solid $color-secondary;
+                }
+  
+                &:focus {
+                    color: $color-accent;
+                    background-color: lighten($color-secondary, 5%);
+                    border-bottom: 3px solid $color-secondary;
+                }
+            }
+        }
+    }
+  }

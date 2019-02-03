@@ -1,0 +1,36 @@
+//media queries for the fonts responsive
+
+//size 576  and above
+
+
+@media screen and (max-width:576px) {
+
+    // html{
+    //     font-size: 16px;
+    
+    //         }
+    
+    :root {
+        font-size: 16px;
+    }
+
+}
+//size 720 and larger
+
+@media screen and (min-width:720px) {
+
+    :root {
+        font-size: 19px;
+    }
+}
+
+
+//size 1000 and larger
+@media screen and (min-width:1000px) {
+
+    
+    :root {
+        font-size: 21px;
+        // color:red;
+    }
+}

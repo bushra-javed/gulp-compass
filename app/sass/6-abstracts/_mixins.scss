@@ -1,0 +1,39 @@
+@mixin box($radius,$shadowcolor,$gradcolor1,$gradcolor2){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+    box-shadow: 0 5px 10px $shadowcolor;
+    -webkit-box-shadow: 0 5px 10px $shadowcolor;
+    -moz-box-shadow: 0 5px 10px $shadowcolor;
+    
+    background: #036;
+
+    background:-webkit-linear-gradient($gradcolor1,$gradcolor2);
+    background:-o-linear-gradient($gradcolor1,$gradcolor2);
+    background:-moz-linear-gradient($gradcolor1,$gradcolor2);
+    background:linear-gradient($gradcolor1,$gradcolor2);
+}
+
+
+@mixin box-shadow(){
+    box-shadow: 0 5px 10px $shadowcolor;
+    -webkit-box-shadow: 0 5px 10px $shadowcolor;
+    -moz-box-shadow: 0 5px 10px $shadowcolor;
+   
+}
+
+@mixin border-radius($radius){
+
+    border-radius: $radius;
+}
+
+  @mixin   linear-gradient($gradcolor1,$gradcolor2){
+
+    background: #036;
+
+    background:-webkit-linear-gradient($gradcolor1,$gradcolor2);
+    background:-o-linear-gradient($gradcolor1,$gradcolor2);
+    background:-moz-linear-gradient($gradcolor1,$gradcolor2);
+    background:linear-gradient($gradcolor1,$gradcolor2);
+
+  }

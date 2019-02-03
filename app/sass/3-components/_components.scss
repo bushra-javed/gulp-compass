@@ -1,0 +1,74 @@
+
+
+.circle-for-icon {
+    width: 6vmin;
+    height: 6vmin;
+    font-size: $i-font;
+    background: #0cb8b6;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 6vmin;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    
+    // &:hover{
+
+    //     @include animation(wow, 0.5,$ease-in-out-quint,1);
+    // }
+}
+
+// @include keyframes(wow){
+//     0%{
+// @include transform(scale(1));
+//     }
+//     50%{
+//         @include transform(scale(2));
+
+//     }
+//     100%{
+//         @include transform(scale(1));
+
+//     }
+// }
+
+
+
+
+
+.rectangle-with-traingle {
+    margin-left: 140px;
+    background: $color-primary;
+    padding: 14px 24px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.18);
+    position: relative;
+    width: 200px;
+    height: 400px;
+}
+
+.rectangle-with-traingle::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-left: 0;
+    bottom: -40px;
+    left: 56px;
+    border-top-color: #fff;
+    border-width: 20px;
+}
+
+
+.line-under-heading {
+    content: "";
+    width: 200px;
+    background-color: $main-orange;
+    margin: auto;
+    display: block;
+    height: 5px;
+}
+
+

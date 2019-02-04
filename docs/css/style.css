@@ -197,21 +197,6 @@ article p a:visited {
   height: 5px;
 }
 
-@media screen and (max-width: 576px) {
-  :root {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 720px) {
-  :root {
-    font-size: 19px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  :root {
-    font-size: 21px;
-  }
-}
 body {
   font-family: "Arial";
   text-align: center;

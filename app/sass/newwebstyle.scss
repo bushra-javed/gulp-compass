@@ -29,10 +29,10 @@
 
 }
 
-.container-fluid {
-    margin-top: 80px;
 
-    section#section-1 {
+section#section-1 {
+    .container-fluid {
+        margin-top: 80px;
         .section-1 {
             position: relative;
             //  border: 11px solid red;
@@ -86,19 +86,18 @@
 
 
 
+section#section-5 {
 .container-fluid {
     margin-top: 80px;
 
-    section#section-2 {
-        .section-2 {
+        .section-5 {
             position: relative;
             //  border: 11px solid red;
             height: 27rem;
 
             .bg-image {
 
-                // border: 2px solid $color-dark;
-                box-shadow: 1px 2px 2px #444444;
+                // box-shadow: 1px 2px 2px #444444;
                 background: url("../images/women-right.jpg") center top;
                 height: 100%;
                 width: 100%;
@@ -124,12 +123,11 @@
 
                 .inner {
                     @extend .inner-common;
-
-
+// border: 1px solid red;
+margin-left: 8rem;
 
 
                     h2 {
-                        line-height: 50px;
                         margin-top: 7rem;
                         text-align: center;
                     }
@@ -145,10 +143,11 @@
 
 
 
+section#section-3 {
 .container-fluid {
-    margin-top: 80px;
+    // margin-top: 80px;
+    margin-top: 50px;
 
-    section#section-3 {
         .section-3 {
             position: relative;
             //       border: 11px solid red;
@@ -201,55 +200,57 @@
     }
 }
 
-#sidebar-left {
-//    float: left;
-    // margin-top: -8px;
-    padding: $padding-section;
-.col{
-
-    .vert-nav {
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            line-height: 1.7em;
-            width: 100%;
+section#section-6{
+margin-top: 50px;
+    #sidebar-left {
+        //    float: left;
+        // margin-top: -8px;
+        // padding: $padding-section;
+        .col{
             
-            li {
-                border-bottom: 2px solid $color-primary;
-                border-color: lighten($color-primary, 70%);
-
-                a {
-                    text-decoration: none;
-                    color: #00647D;
-                    padding: 2px 20px;
-                    display: block;
-                    opacity: 7;
-                    color: $color-primary;
+            .vert-nav {
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.7em;
+                    width: 100%;
                     
-                    &:hover {
-                        opacity: 1;
+                    li {
+                        border-bottom: 2px solid $color-primary;
+                        border-color: lighten($color-primary, 70%);
+                        
+                        a {
+                            text-decoration: none;
+                            color: #00647D;
+                            padding: 2px 20px;
+                            display: block;
+                            opacity: 7;
+                            color: $color-primary;
+                            
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                        
                     }
                 }
-
-            }
-        }
-            ul.col1{
-                li{
-
-                    &:last-child {
-                        border-bottom: none;
-                    }
-                    
-                    &:nth-child(1) {
-                        background-color: pink;
-                    }
-                    
-                    &:nth-child(2) {
-                        background-color: mix($yellow, $white, 50%);
-                    }
-                    
-                    &:nth-child(3) {
+                ul.col1{
+                    li{
+                        
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        
+                        &:nth-child(1) {
+                            background-color: pink;
+                        }
+                        
+                        &:nth-child(2) {
+                            background-color: mix($yellow, $white, 50%);
+                        }
+                        
+                        &:nth-child(3) {
                         background-color: fade-out($orange, .5);
                     }
                     
@@ -257,28 +258,28 @@
                         background-color: fade-in($orange, .8);
                     }
                     
-    
+                    
                     &:nth-child(5) {
                         background-color: grayscale($orange);
                     }
                 }
             }
-                
-                ul.col2{
-                    li{
-
-                        &:nth-child(1) {
-                            background-color: rgba(0, 200, 43, 0.5);
-                        }
-                        
-                        &:nth-child(2) {
-                            background-color: adjust-hue($color-primary, 90dg);
-                        }
-                        
-                        &:nth-child(3) {
-                            background-color: grayscale($orange);
-                        }
-                        
+            
+            ul.col2{
+                li{
+                    
+                    &:nth-child(1) {
+                        background-color: rgba(0, 200, 43, 0.5);
+                    }
+                    
+                    &:nth-child(2) {
+                        background-color: adjust-hue($color-primary, 90dg);
+                    }
+                    
+                    &:nth-child(3) {
+                        background-color: grayscale($orange);
+                    }
+                    
                         &:nth-child(4) {
                             background-color: adjust-color($color-primary, $red:0, $green:140, $blue:0);
                         }
@@ -320,94 +321,57 @@
                     }
                 }
                 
-
-            }
-        }
-}
-
-#sidebar-right {
-    float: right;
-    width: 213px;
-
-    .right-sidebar-title {
-        color: #00647D;
-        font-weight: bold;
-    }
-
-    .right-sidebar-image {
-        background: $gray;
-        margin: 12px 0px;
-    }
-}
-
-main#content {
-    margin: 0px 213px 0px 109px;
-    padding: 0px;
-
-    section.first-section {
-        margin: 30px;
-
-        h2 {
-            margin-top: 0px;
-            margin-bottom: 10px;
-            color: #00647D;
-            line-height: 1em;
-        }
-
-        article {
-            #feature-image {
-                height: 200px;
-                width: 100%;
-                background: $gray;
-            }
-
-            p {
-                margin: 20px 0;
+                
             }
         }
     }
 }
-
-footer {
-    clear: both;
-    background: #00647D;
-    color: #FFF;
-    text-align: center;
-    padding: 10px;
-}
-
-
-
-
-
-
+    
+    
+    footer {
+        clear: both;
+        background: #00647D;
+        color: #FFF;
+        text-align: center;
+        padding: 10px;
+    }
 
 
 // team1 media css
 
 /* team part1*/
 .team-part1-banner {
-    background-image: url('IMAGES/bottom-rectangle.png');
+
+margin-top: 70px;
+    padding: 30x;
+    background-image: url('../images/bottom-rectangle.png');
     background-repeat: no-repeat;
     background-size: cover;
+    // opacity: .5;
+    // z-index: -1;
 
 
     .part1-header {
         text-align: center;
         padding: 20px 0;
         color: #fff;
-        // border-radius:15px;
-        background-color: $color-dark;
-        -webkit-box-shadow: 0 10px 6px -6px #777;
-        -moz-box-shadow: 0 10px 6px -6px #777;
-        box-shadow: 0 10px 6px -6px #777;
+        // background-
+        color: $color-dark;
+        // -webkit-box-shadow: 0 8px 6px -6px #777;
+        // -moz-box-shadow: 0 8px 6px -6px #777;
+        // box-shadow: 0 8px 6px -6px #777;
+        &::after{
+            @extend .line-under-heading;
+            background-color:$color-dark;
+            width: 400px;
+        }
     }
 
 
 }
-
 .team-part1-detail {
     /* color: #fff; */
+    // border: 1px solid red;
 
 
 
@@ -419,7 +383,7 @@ footer {
         .img-thumbnail1 {
             margin: 10px;
             padding: 10px !important;
-            box-shadow: 0 10px 6px -6px #777;
+            // box-shadow: 0 10px 6px -6px #777;
 
             .img-div {
                 transition: all ease-in-out .3s;
@@ -512,18 +476,39 @@ footer {
 }
 
 
+///@extend
+
+
+//   .my-box {
+//     padding: 10px;
+// background-color: green;
+// height: 100px;
+// width: 100px;    
+// @include for-size(xs) {
+//     padding: 20px;
+//     background-color: red;
+//    }
+
+//    @include for-size(lg) {
+//     padding: 20px;
+//     background-color: purple;
+//    }
+
+//   }
 
 //list for all
 .list-for-all{
+    margin-top: 80px;
 
 box-sizing: border-box;
     // border: 1px solid red;
-    padding: 30px;
+    // padding: 30px;
 
     
     .detail-1{
         // border: 1px solid red;
         h4{
+            text-align: center;
             color:#333;
         }
         ul{
@@ -541,6 +526,56 @@ box-sizing: border-box;
 
     }
 }
+
+
+
+section#section-7
+{
+    margin-top: 50px;
+
+    div.wrapper{margin: 1rem;
+        text-align: center;
+        .main-title{
+            color:#fff;
+        padding: .5rem;
+        }
+    }
+    .col1{
+        // text-align: center;
+        font-size: .8rem;
+        color:#858585;
+        border-right: 1px solid lighten(#858585, 40%);
+        
+    }
+    
+    .col2{
+        text-align: center;
+        
+        h5{
+            
+            margin: 30px;
+            color:#858585;
+            
+        }
+    }
+    .col3{
+        text-align: center;
+        
+        color:$color-dark;
+        h1{
+            
+            font-size: 5rem;
+            margin: 0;
+        }
+        span{
+            font-size: .6rem;
+    color:#858585;
+    
+}
+}
+
+}
+
 %main-green-gradient {
     @include background-image(linear-gradient(left, $color-dark 30%, $color-secondary));
 }
@@ -551,76 +586,25 @@ footer {
     @extend %main-green-gradient;
 }
 
-#main-title {
-    @include text-shadow(5px 25px 15px rgba($blue, .9));
+.main-title {
     @extend %main-green-gradient;
+    text-align: center;
+     display: inline;
 }
 
-@media screen and (max-width:775px) {
-    section#section-1 {
-        margin-top: 80px;
-
-        .section-1 {
-            height: 120vh !important;
-            height: 38rem !important; //50rem;///
-            position: relative !important;
-
-            .bg-image {
-                background: url("../images/family-banner_aaoufv_c_scale\,w_644.jpg") center top !important;
-                background-repeat: no-repeat !important;
-                background-size: cover !important;
-            }
-
-            .wrapper-for-path-text {
-                top: 200px !important;
-                height: 20rem !important;
-
-                .bg-path {
-                    background-color: $color-dark !important;
-                    -webkit-clip-path: polygon(0 0, 100% 22%, 100% 77%, 0% 100%);
-                    clip-path: polygon(0 0, 100% 22%, 100% 77%, 0% 100%) !important;
-                    width: 100% !important;
-                }
-
-                .inner {
-                    width: 100% !important;
-                    margin-top: 50px;
-                    height: 100% !important;
-                    padding: 50px 30px;
-
-                    h1 {
-                        font-size: 2rem;
-                        margin-top: 10px !important;
-                    }
-                }
-            }
-        }
-    }
-
-    :root {
-        font-size: 12px !important;
-    }
-}
 
 //720 and above
 @media screen and (min-width:776px) {
-
     .bg-path {
         width: 70% !important;
     }
-
     :root {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 }
-
-
 //size 1000 and larger
 @media screen and (min-width:1000px) {
-
-
     :root {
-        font-size: 21px;
-        // color:red;
+        font-size: 21px !important;
     }
 }

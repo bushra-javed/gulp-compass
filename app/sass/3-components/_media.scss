@@ -3,16 +3,103 @@
 //size 576  and below
 
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:775px) {
 
 
-h1{
-    color:green;
-}
-:root {
-    font-size: 16px;
-}
+    section#section-1 {
+        margin-top: 80px;
+
+        .section-1 {
+            height: 120vh !important;
+            height: 38rem !important; //50rem;///
+            position: relative !important;
+
+            .bg-image {
+                background: url("../images/family-banner_aaoufv_c_scale\,w_644.jpg") center top !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+            }
+
+            .wrapper-for-path-text {
+                top: 200px !important;
+                height: 20rem !important;
+
+                .bg-path {
+                    background-color: $color-dark !important;
+                    -webkit-clip-path: polygon(0 0, 100% 22%, 100% 77%, 0% 100%);
+                    clip-path: polygon(0 0, 100% 22%, 100% 77%, 0% 100%) !important;
+                    width: 100% !important;
+                }
+
+                .inner {
+                    width: 100% !important;
+                    margin-top: 50px;
+                    height: 100% !important;
+                    padding: 50px 30px;
+
+                    h1 {
+                        font-size: 2rem;
+                        margin-top: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    :root {
+        font-size: 16px !important;
+    }
+
+
 
 }
+
 //size 720 and larger
 
+
+
+// media querries from article
+
+
+// @mixin for-size($size) {
+//     @if $size == xs {
+//       @media (max-width: 599px) { @content; }
+//     } @else if $size == sm {
+//       @media (min-width: 600px)  { @content; }
+//     } @else if $size == md {
+//       @media (min-width: 900px) { @content; }
+//     } @else if $size == lg {
+//       @media (min-width: 1200px) { @content; }
+//     } @else if $size == xlg {
+//       @media (min-width: 1800px) { @content; }
+//     }
+//   }
+  
+
+
+
+// another exapmle of
+// @mixin breakpoint($point) {
+//     @if $point == large {
+//        @media only screen and (min-width: 1366px) {
+//           @content;
+//        }
+//     } 
+//     @else if $point == desktop {
+//        @media only screen and (min-width: 1024px) {
+//           @content;
+//        }
+//     } 
+//     @else if $point == tablet {
+//        @media only screen and (min-width: 600px) {
+//           @content;
+//        }
+//     }
+
+//     //usage
+//     @include breakpoint(large) {
+//         div {
+//            font-size: 2rem;
+//            line-height: 1.4;
+//         }
+//      }

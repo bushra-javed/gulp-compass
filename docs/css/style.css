@@ -197,6 +197,80 @@ article p a:visited {
   height: 5px;
 }
 
+.sidebar-social-wrapper {
+  /*border: 1px solid green;*/
+  height: 360px;
+  width: 100px;
+  position: fixed;
+  top: 300px;
+  margin-top: 7px;
+  z-index: 999999;
+  left: 0;
+}
+
+.soical-all {
+  color: #fff;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 21px;
+  /* vertical-align: middle; */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 7px;
+  line-height: 45px;
+  margin-bottom: 20px;
+  transition: all ease 300ms;
+}
+
+.sidebar-social-facebook {
+  top: 0;
+  background-color: #3b5998;
+  margin-bottom: 10px;
+}
+
+.sidebar-social-twitter {
+  background-color: #55acee;
+  top: 55px;
+  display: inline-block;
+}
+
+.sidebar-social-goggleplus {
+  /*border: 1px solid red;*/
+  background-color: #dd4b39;
+  top: 110px;
+  display: inline-block;
+}
+
+.sidebar-social-youtube {
+  /*border: 1px solid red;*/
+  /*border:2px solid #cd201f;*/
+  background-color: red;
+  top: 165px;
+  display: inline-block;
+}
+
+.sidebar-social-instagram {
+  /*border: 1px solid red;*/
+  background-color: #3f729b;
+  top: 220px;
+  display: inline-block;
+}
+
+.sidebar-social-linkin {
+  /*border: 1px solid red;*/
+  background-color: #cd201f;
+  top: 275px;
+  display: inline-block;
+}
+
+.sidebar-social-youtube:hover,
+.sidebar-social-instagram:hover {
+  background-color: #cd201f;
+}
+
 body {
   font-family: "Arial";
   text-align: center;

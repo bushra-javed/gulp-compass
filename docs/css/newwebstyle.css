@@ -360,9 +360,6 @@ section#section-1 .container-fluid .section-1 .wrapper-for-path-text .inner .v-a
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-section#section-1 .container-fluid .section-1 .wrapper-for-path-text .inner .v-a h1 {
-  border: 1px solid red;
-}
 section#section-1 .container-fluid .section-1 .wrapper-for-path-text .inner .v-a button {
   font-family: 'arial';
   font-weight: 700;
@@ -402,7 +399,6 @@ section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
 }
 section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a {
   position: absolute;
@@ -410,7 +406,6 @@ section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  border: 1px solid red;
 }
 section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a h2 {
   text-align: center;

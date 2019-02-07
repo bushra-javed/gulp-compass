@@ -12,18 +12,6 @@ body {
   box-sizing: border-box;
 }
 
-article p a {
-  color: #0000FF;
-}
-
-article p a:hover, article p a:focus {
-  color: #001A57;
-}
-
-article p a:visited {
-  color: #0000FF;
-}
-
 .navbar-custom {
   margin: 0;
   padding: 0;

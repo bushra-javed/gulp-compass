@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   line-height: 1em;
   overflow-x: hidden;
@@ -188,7 +189,7 @@ article p a:visited {
   border-width: 20px;
 }
 
-.line-under-heading, .team-part1-banner .part1-header::after {
+.line-under-heading, section#section-2 .team-part1-banner .part1-header::after {
   content: "";
   width: 200px;
   background-color: orange;
@@ -314,7 +315,7 @@ article p a:visited {
   border-top: 3px solid #76323f;
 }
 
-.inner-common, section#section-1 .container-fluid .section-1 .wrapper-for-path-text .inner, section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner, section#section-3 .container-fluid .section-3 .wrapper-for-path-text .inner {
+.inner-common, section#section-1 .container-fluid .section-1 .wrapper-for-path-text .inner, section#section-3 .container-fluid .section-3 .wrapper-for-path-text .inner, section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner, section#section-7 .container-fluid .section-5 .wrapper-for-path-text .inner {
   z-index: 1;
   text-align: center;
   position: absolute;
@@ -343,7 +344,7 @@ section#section-1 .container-fluid .section-1 .bg-image {
 section#section-1 .container-fluid .section-1 .wrapper-for-path-text {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 90%;
 }
 section#section-1 .container-fluid .section-1 .wrapper-for-path-text .bg-path {
   -webkit-clip-path: polygon(100% 0, 50% 100%, 0 100%, 0 27%, 23% 0);
@@ -366,49 +367,99 @@ section#section-1 .container-fluid .section-1 .wrapper-for-path-text .inner .v-a
   color: #76323f;
 }
 
-section#section-5 .container-fluid {
-  margin-top: 80px;
+section#section-2 .team-part1-banner {
+  margin-top: 70px;
+  padding: 30x;
+  background-image: url("../images/bottom-rectangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-section#section-5 .container-fluid .section-5 {
-  position: relative;
-  height: 27rem;
+section#section-2 .team-part1-banner .part1-header {
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  color: #76323f;
 }
-section#section-5 .container-fluid .section-5 .bg-image {
-  background: url("../images/women-right.jpg") center top;
+section#section-2 .team-part1-banner .part1-header::after {
+  background-color: #76323f;
+  width: 400px;
+}
+section#section-2 .team-part1-detail {
+  /* color: #fff; */
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 {
+  margin-top: 10px;
+  background-color: #D7CEC7;
+  color: #444444;
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 {
+  margin: 10px;
+  padding: 10px !important;
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .img-div {
+  transition: all ease-in-out .3s;
+  border-radius: 50%;
+  margin: auto;
+  height: 75%;
+  width: 70%;
+  line-height: 70%;
+  background-color: #444444;
+  box-shadow: 0 10px 6px -6px #777;
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .img-div img {
   height: 100%;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  border-radius: 50%;
+  box-shadow: 0 10px 6px -6px #777;
 }
-section#section-5 .container-fluid .section-5 .wrapper-for-path-text {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .img-div img:hover {
+  transform: scale(0.95);
 }
-section#section-5 .container-fluid .section-5 .wrapper-for-path-text .bg-path {
-  -webkit-clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
-  clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
-  background-color: #76323f;
-  background-color: orangered;
-  height: 27rem;
-  opacity: .7;
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption {
+  margin-top: 20px;
 }
-section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner {
-  left: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption h3 {
+  color: #000;
 }
-section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a {
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li {
+  display: inline-block;
 }
-section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a h2 {
-  text-align: center;
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li a {
+  background-color: white;
+  font-size: 17px !important;
+  color: #aeaeae;
+  line-height: 20px;
+  display: block;
+  margin: 10px 5px !important;
+  padding: 5px 5px !important;
+  border-radius: 10%;
+  width: 30px !important;
+  height: 30px !important;
+  /* vertical-align: middle; */
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li.facebook a {
+  background-color: #3b5998;
+  color: white;
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li.facebook a:hover {
+  background-color: white;
+  color: #3b5998;
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li.twitter a:hover {
+  background-color: white;
+  color: #55acee;
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li.google-plus a:hover {
+  background-color: white;
+  color: red;
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social .twitter a {
+  background-color: #55acee;
+  color: white;
+}
+section#section-2 .team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social .google-plus a {
+  background-color: red;
+  color: white;
 }
 
 section#section-3 .container-fluid {
@@ -438,8 +489,8 @@ section#section-3 .container-fluid .section-3 .wrapper-for-path-text .bg-path {
   left: 30%;
   -webkit-clip-path: polygon(100% 60%, 99% 77%, 48% 100%, 19% 100%, 38% 0, 59% 0);
   clip-path: polygon(100% 60%, 99% 77%, 48% 100%, 19% 100%, 38% 0, 59% 0);
-  background-color: #76323f;
   background-color: palevioletred;
+  background-color: #76323f;
   height: 100%;
   width: 70%;
   opacity: .7;
@@ -459,6 +510,79 @@ section#section-3 .container-fluid .section-3 .wrapper-for-path-text .inner .v-a
 }
 section#section-3 .container-fluid .section-3 .wrapper-for-path-text .inner .v-a h2 {
   vertical-align: center;
+}
+
+section#section-4 {
+  margin-top: 50px;
+}
+section#section-4 .col1 {
+  font-size: .8rem;
+  color: #858585;
+  border-right: 1px solid #ebebeb;
+}
+section#section-4 .col2 {
+  text-align: center;
+}
+section#section-4 .col2 h5 {
+  margin: 30px;
+  color: #858585;
+}
+section#section-4 .col3 {
+  text-align: center;
+  color: #76323f;
+}
+section#section-4 .col3 h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+section#section-4 .col3 span {
+  font-size: .6rem;
+  color: #858585;
+}
+
+section#section-5 .container-fluid {
+  margin-top: 80px;
+}
+section#section-5 .container-fluid .section-5 {
+  position: relative;
+  height: 27rem;
+}
+section#section-5 .container-fluid .section-5 .bg-image {
+  background: url("../images/women-right.jpg") center top;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section#section-5 .container-fluid .section-5 .wrapper-for-path-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+section#section-5 .container-fluid .section-5 .wrapper-for-path-text .bg-path {
+  -webkit-clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
+  clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
+  background-color: #D7CEC7;
+  height: 27rem;
+  opacity: .9;
+}
+section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner {
+  left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #76323f;
+}
+section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a h2 {
+  text-align: center;
 }
 
 section#section-6 {
@@ -528,158 +652,71 @@ footer {
 }
 
 /* team part1*/
-.team-part1-banner {
-  margin-top: 70px;
-  padding: 30x;
-  background-image: url("../images/bottom-rectangle.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+section#section-7 .container-fluid {
+  margin-top: 80px;
 }
-.team-part1-banner .part1-header {
-  text-align: center;
-  padding: 20px 0;
-  color: #fff;
-  color: #76323f;
+section#section-7 .container-fluid .section-5 {
+  position: relative;
+  height: 27rem;
 }
-.team-part1-banner .part1-header::after {
-  background-color: #76323f;
-  width: 400px;
-}
-
-.team-part1-detail {
-  /* color: #fff; */
-}
-.team-part1-detail .team-part1-detail-1 {
-  margin-top: 10px;
-  background-color: #D7CEC7;
-  color: #444444;
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 {
-  margin: 10px;
-  padding: 10px !important;
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .img-div {
-  transition: all ease-in-out .3s;
-  border-radius: 50%;
-  margin: auto;
-  height: 75%;
-  width: 70%;
-  line-height: 70%;
-  background-color: #444444;
-  box-shadow: 0 10px 6px -6px #777;
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .img-div img {
+section#section-7 .container-fluid .section-5 .bg-image {
+  background: url("../images/woman-banner.jpg") center top;
   height: 100%;
   width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 10px 6px -6px #777;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .img-div img:hover {
-  transform: scale(0.95);
+section#section-7 .container-fluid .section-5 .wrapper-for-path-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption {
-  margin-top: 20px;
+section#section-7 .container-fluid .section-5 .wrapper-for-path-text .bg-path {
+  -webkit-clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
+  clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
+  background-color: #76323f;
+  background-color: #565656;
+  height: 27rem;
+  opacity: .7;
 }
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption h3 {
-  color: #000;
+section#section-7 .container-fluid .section-5 .wrapper-for-path-text .inner {
+  left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li {
-  display: inline-block;
+section#section-7 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li a {
-  background-color: white;
-  font-size: 17px !important;
-  color: #aeaeae;
-  line-height: 20px;
-  display: block;
-  margin: 10px 5px !important;
-  padding: 5px 5px !important;
-  border-radius: 10%;
-  width: 30px !important;
-  height: 30px !important;
-  /* vertical-align: middle; */
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li.facebook a {
-  background-color: #3b5998;
-  color: white;
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li.facebook a:hover {
-  background-color: white;
-  color: #3b5998;
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li.twitter a:hover {
-  background-color: white;
-  color: #55acee;
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social li.google-plus a:hover {
-  background-color: white;
-  color: red;
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social .twitter a {
-  background-color: #55acee;
-  color: white;
-}
-.team-part1-detail .team-part1-detail-1 .img-thumbnail1 .caption .team-part1-social .google-plus a {
-  background-color: red;
-  color: white;
+section#section-7 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a h2 {
+  text-align: center;
 }
 
-.list-for-all {
+section#section-8 .list-for-all {
   margin-top: 80px;
   box-sizing: border-box;
 }
-.list-for-all .detail-1 {
+section#section-8 .list-for-all .detail-1 {
   border-right: 1px solid #ebebeb;
 }
-.list-for-all .detail-1 h4 {
+section#section-8 .list-for-all .detail-1 h4 {
   text-align: center;
   color: #333;
 }
-.list-for-all .detail-1 ul {
+section#section-8 .list-for-all .detail-1 ul {
   padding: 30px;
 }
-.list-for-all .detail-1 ul li {
+section#section-8 .list-for-all .detail-1 ul li {
   font-size: .8rem;
   color: #858585;
 }
-.list-for-all .detail-last {
+section#section-8 .list-for-all .detail-last {
   border-right: none;
-}
-
-section#section-7 {
-  margin-top: 50px;
-}
-section#section-7 div.wrapper {
-  margin: 1rem;
-  text-align: center;
-}
-section#section-7 div.wrapper .main-title {
-  color: #fff;
-  padding: .5rem;
-}
-section#section-7 .col1 {
-  font-size: .8rem;
-  color: #858585;
-  border-right: 1px solid #ebebeb;
-}
-section#section-7 .col2 {
-  text-align: center;
-}
-section#section-7 .col2 h5 {
-  margin: 30px;
-  color: #858585;
-}
-section#section-7 .col3 {
-  text-align: center;
-  color: #76323f;
-}
-section#section-7 .col3 h1 {
-  font-size: 5rem;
-  margin: 0;
-}
-section#section-7 .col3 span {
-  font-size: .6rem;
-  color: #858585;
 }
 
 footer, .main-title {
@@ -693,6 +730,8 @@ footer, .main-title {
 
 .main-title {
   text-align: center;
+  color: #fff;
+  padding: .5rem .5rem;
 }
 
 @media screen and (min-width: 776px) {

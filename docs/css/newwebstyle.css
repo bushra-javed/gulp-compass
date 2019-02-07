@@ -448,7 +448,6 @@ section#section-3 .container-fluid .section-3 .wrapper-for-path-text .inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
   left: 50%;
 }
 section#section-3 .container-fluid .section-3 .wrapper-for-path-text .inner .v-a {

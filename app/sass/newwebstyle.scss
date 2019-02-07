@@ -206,9 +206,18 @@ margin-top: 50px;
         //    float: left;
         // margin-top: -8px;
         // padding: $padding-section;
-        .col{
             
-            .vert-nav {
+            .vert-nav-right {
+                border-left: 1px solid lighten(#858585, 20%);
+                height: 100%;
+                p{
+                    padding: .5rem;
+                    line-height: 1rem;
+                    font-size: .8rem;
+                    color:#858585;
+     }
+    }
+    .vert-nav-left{
                 ul {
                     list-style-type: none;
                     margin: 0;
@@ -232,6 +241,7 @@ margin-top: 50px;
                                 opacity: 1;
                             }
                         }
+                     
                         
                     }
                 }
@@ -244,82 +254,91 @@ margin-top: 50px;
                         
                         &:nth-child(1) {
                             background-color: pink;
+                            background-color: mix($color-dark, $white, 20%);
                         }
                         
                         &:nth-child(2) {
-                            background-color: mix($yellow, $white, 50%);
+                            background-color: mix($color-dark, $white, 30%);
+
                         }
                         
                         &:nth-child(3) {
                         background-color: fade-out($orange, .5);
+                        background-color: mix($color-dark, $white, 40%);
+
                     }
                     
                     &:nth-child(4) {
                         background-color: fade-in($orange, .8);
+                        background-color: mix($color-dark, $white, 50%);
+
                     }
                     
                     
                     &:nth-child(5) {
                         background-color: grayscale($orange);
+                        background-color: mix($color-dark, $white, 60%);
+
                     }
                 }
-            }
             
-            ul.col2{
-                li{
+    
+    
+            // ul.col2{
+            //     li{
                     
-                    &:nth-child(1) {
-                        background-color: rgba(0, 200, 43, 0.5);
-                    }
+            //         &:nth-child(1) {
+            //             background-color: rgba(0, 200, 43, 0.5);
+            //         }
                     
-                    &:nth-child(2) {
-                        background-color: adjust-hue($color-primary, 90dg);
-                    }
+            //         &:nth-child(2) {
+            //             background-color: adjust-hue($color-primary, 90dg);
+            //         }
                     
-                    &:nth-child(3) {
-                        background-color: grayscale($orange);
-                    }
+            //         &:nth-child(3) {
+            //             background-color: grayscale($orange);
+            //         }
                     
-                        &:nth-child(4) {
-                            background-color: adjust-color($color-primary, $red:0, $green:140, $blue:0);
-                        }
-                        &:nth-child(5) {
-                            background-color: grayscale($orange);
-                        }
-                    }
-                }
+            //             &:nth-child(4) {
+            //                 background-color: adjust-color($color-primary, $red:0, $green:140, $blue:0);
+            //             }
+            //             &:nth-child(5) {
+            //                 background-color: grayscale($orange);
+            //             }
+            //         }
+            //     }
                 
                 
-                ul.col3{
-                    li{
-                        &:nth-child(1) {
-                            background-color: rgba(0, 200, 43, 0.5);
-                        }
+            //     ul.col3{
+            //         li{
+            //             &:nth-child(1) {
+            //                 background-color: rgba(0, 200, 43, 0.5);
+            //             }
                         
-                        &:nth-child(2) {
-                            background-color: adjust-hue($color-primary, 90dg);
-                        }
+            //             &:nth-child(2) {
+            //                 background-color: adjust-hue($color-primary, 90dg);
+            //             }
                         
-                        &:nth-child(3) {
-                            background-color: grayscale($orange);
-                        }
+            //             &:nth-child(3) {
+            //                 background-color: grayscale($orange);
+            //             }
                         
-                        &:nth-child(4) {
-                            background-color: grayscale($orange);
-                            background-color: adjust-hue($color-primary, 90dg);
-                        }
+            //             &:nth-child(4) {
+            //                 background-color: grayscale($orange);
+            //                 background-color: adjust-hue($color-primary, 90dg);
+            //             }
                         
-                        &:nth-child(5) {
-                            background-color: grayscale($orange);
-                        }
+            //             &:nth-child(5) {
+            //                 background-color: grayscale($orange);
+            //             }
                         
-                        &:nth-child(14) {
-                            background-color: grayscale($orange);
-                            background-color: red; //adjust-hue($color-primary, 90dg);
-                        }
+            //             &:nth-child(14) {
+            //                 background-color: grayscale($orange);
+            //                 background-color: red; //adjust-hue($color-primary, 90dg);
+            //             }
                         
-                    }
-                }
+            //         }
+            //     }
                 
                 
             }

@@ -443,18 +443,28 @@ section#section-3 .container-fluid .section-3 .wrapper-for-path-text .inner h2 {
 section#section-6 {
   margin-top: 50px;
 }
-section#section-6 #sidebar-left .col .vert-nav ul {
+section#section-6 #sidebar-left .vert-nav-right {
+  border-left: 1px solid #b8b8b8;
+  height: 100%;
+}
+section#section-6 #sidebar-left .vert-nav-right p {
+  padding: .5rem;
+  line-height: 1rem;
+  font-size: .8rem;
+  color: #858585;
+}
+section#section-6 #sidebar-left .vert-nav-left ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   line-height: 1.7em;
   width: 100%;
 }
-section#section-6 #sidebar-left .col .vert-nav ul li {
+section#section-6 #sidebar-left .vert-nav-left ul li {
   border-bottom: 2px solid #565656;
   border-color: white;
 }
-section#section-6 #sidebar-left .col .vert-nav ul li a {
+section#section-6 #sidebar-left .vert-nav-left ul li a {
   text-decoration: none;
   color: #00647D;
   padding: 2px 20px;
@@ -462,61 +472,30 @@ section#section-6 #sidebar-left .col .vert-nav ul li a {
   opacity: 7;
   color: #565656;
 }
-section#section-6 #sidebar-left .col .vert-nav ul li a:hover {
+section#section-6 #sidebar-left .vert-nav-left ul li a:hover {
   opacity: 1;
 }
-section#section-6 #sidebar-left .col .vert-nav ul.col1 li:last-child {
+section#section-6 #sidebar-left .vert-nav-left ul.col1 li:last-child {
   border-bottom: none;
 }
-section#section-6 #sidebar-left .col .vert-nav ul.col1 li:nth-child(1) {
+section#section-6 #sidebar-left .vert-nav-left ul.col1 li:nth-child(1) {
   background-color: pink;
+  background-color: #e4d6d9;
 }
-section#section-6 #sidebar-left .col .vert-nav ul.col1 li:nth-child(2) {
-  background-color: #ffff80;
+section#section-6 #sidebar-left .vert-nav-left ul.col1 li:nth-child(2) {
+  background-color: #d6c2c5;
 }
-section#section-6 #sidebar-left .col .vert-nav ul.col1 li:nth-child(3) {
+section#section-6 #sidebar-left .vert-nav-left ul.col1 li:nth-child(3) {
   background-color: rgba(255, 127, 0, 0.5);
+  background-color: #c8adb2;
 }
-section#section-6 #sidebar-left .col .vert-nav ul.col1 li:nth-child(4) {
+section#section-6 #sidebar-left .vert-nav-left ul.col1 li:nth-child(4) {
   background-color: #ff7f00;
+  background-color: #bb999f;
 }
-section#section-6 #sidebar-left .col .vert-nav ul.col1 li:nth-child(5) {
+section#section-6 #sidebar-left .vert-nav-left ul.col1 li:nth-child(5) {
   background-color: gray;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col2 li:nth-child(1) {
-  background-color: rgba(0, 200, 43, 0.5);
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col2 li:nth-child(2) {
-  background-color: #565656;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col2 li:nth-child(3) {
-  background-color: gray;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col2 li:nth-child(4) {
-  background-color: #56e256;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col2 li:nth-child(5) {
-  background-color: gray;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col3 li:nth-child(1) {
-  background-color: rgba(0, 200, 43, 0.5);
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col3 li:nth-child(2) {
-  background-color: #565656;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col3 li:nth-child(3) {
-  background-color: gray;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col3 li:nth-child(4) {
-  background-color: gray;
-  background-color: #565656;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col3 li:nth-child(5) {
-  background-color: gray;
-}
-section#section-6 #sidebar-left .col .vert-nav ul.col3 li:nth-child(14) {
-  background-color: gray;
-  background-color: red;
+  background-color: #ad848c;
 }
 
 footer {

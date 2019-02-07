@@ -289,6 +289,7 @@ article p a:visited {
   section#section-1 .section-1 .wrapper-for-path-text {
     top: 200px !important;
     height: 20rem !important;
+    width: 100% !important;
   }
   section#section-1 .section-1 .wrapper-for-path-text .bg-path {
     background-color: #76323f !important;

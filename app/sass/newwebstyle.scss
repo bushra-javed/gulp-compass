@@ -8,6 +8,7 @@
 @import "compass";
 @import "compass/css3";
 
+// @import "../images/social/*.png";
 .navbar-default {
     @extend .navbar-custom;
     border-top: 3px solid $color-dark;
@@ -19,12 +20,12 @@
     text-align: center;
     position: absolute; // padding: 130px;
     top: 0;
-    width: 40%;
+    width: 50%;
     height: 100%;
     z-index: 1; //              z-index: 1;
     overflow: hidden;
-    left: 4%;
-    padding: 2rem;
+    // left: 4%;
+    // padding: 2rem;
     color: #fff;
 
 }
@@ -61,18 +62,26 @@ section#section-1 {
                 }
 
                 .inner {
-
+                    
                     @extend .inner-common;
+                    .v-a{
 
-                    h1 {
-                        padding-top: 1rem;
-                        text-align: center;
-                    }
-
-                    button {
-                        @extend .button;
-                        font-family: 'arial';
-                        font-weight: 700;
+                        margin-left: 2rem;
+                        @include vertical-center;
+                        h1 {
+                            border:1px solid red;
+                            
+                            // margin-top: 3.5rem;
+                            // text-align: center;
+                        }
+                        
+                        button {
+                            @extend .button;
+                            
+                            font-family: 'arial';
+                            font-weight: 700;
+                            color:$color-dark;
+                        }
                     }
                 }
             }
@@ -92,12 +101,10 @@ section#section-5 {
 
         .section-5 {
             position: relative;
-            //  border: 11px solid red;
             height: 27rem;
 
             .bg-image {
 
-                // box-shadow: 1px 2px 2px #444444;
                 background: url("../images/women-right.jpg") center top;
                 height: 100%;
                 width: 100%;
@@ -122,21 +129,28 @@ section#section-5 {
                 }
 
                 .inner {
+left: 5rem;                    
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
                     @extend .inner-common;
-// border: 1px solid red;
-margin-left: 8rem;
+border: 1px solid red;
+.v-a{
+    
+    @include vertical-center;
+border: 1px solid red;
 
 
                     h2 {
-                        margin-top: 7rem;
+                        // margin-left: 7rem;
                         text-align: center;
                     }
-                }
+                }}
             }
         }
     }
-}
 
+}
 
 
 // section3
@@ -173,7 +187,7 @@ section#section-3 {
 
                 .bg-path {
                     position: relative;
-                    left: 40%;
+                    left: 30%;
 
                     -webkit-clip-path: polygon(100% 60%, 99% 77%, 48% 100%, 19% 100%, 38% 0, 59% 0);
                     clip-path: polygon(100% 60%, 99% 77%, 48% 100%, 19% 100%, 38% 0, 59% 0);
@@ -187,17 +201,25 @@ section#section-3 {
                 }
 
                 .inner {
-                    @extend .inner-common;
-                    left: 60%;
 
-                    h2 {
-                        vertical-align: center;
-                        margin-top: 8rem;
-                    }
-                }
-            }
-        }
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    @extend .inner-common;
+border: 1px solid red;
+                    left: 50%;
+                    // border: 1px solid red;
+.v-a{
+@include vertical-center;
+    h2 {
+        
+        vertical-align: center;
     }
+}
+}
+}
+}
+}
 }
 
 section#section-6{
@@ -608,7 +630,7 @@ footer {
 .main-title {
     @extend %main-green-gradient;
     text-align: center;
-     display: inline;
+    //  display: inline;
 }
 
 
@@ -624,6 +646,6 @@ footer {
 //size 1000 and larger
 @media screen and (min-width:1000px) {
     :root {
-        font-size: 21px !important;
+        font-size: 20px !important;
     }
 }

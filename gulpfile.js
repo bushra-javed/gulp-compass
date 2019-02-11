@@ -76,7 +76,7 @@ gulp.task('serve', ['compass','copyHtml'], function() {
     // gulp.watch(['app/sass/*.scss'], ['sass']);
     gulp.watch(['app/sass/*.scss'], ['compass']);
     gulp.watch(['app/*.html'], ['copyHtml']);
-    gulp.watch(['app/images/*'], ['imageMin']);
+    gulp.watch(['app/images/**/*'], ['imageMin']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 

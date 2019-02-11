@@ -312,6 +312,20 @@ article p a:visited {
     font-size: 16px !important;
   }
 }
+.responsive-image__inner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+.responsive-image__inner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
 body {
   font-family: "Arial";
   text-align: center;

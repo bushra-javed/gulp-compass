@@ -397,7 +397,7 @@ section#section-2 .team-part1-banner .part1-header {
 }
 section#section-2 .team-part1-banner .part1-header::after {
   background-color: #76323f;
-  width: 400px;
+  width: 300px;
 }
 section#section-2 .team-part1-detail {
   /* color: #fff; */

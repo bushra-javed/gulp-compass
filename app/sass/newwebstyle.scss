@@ -123,7 +123,7 @@ section#section-2 {
             &::after {
                 @extend .line-under-heading;
                 background-color: $color-dark;
-                width: 400px;
+                width: 300px;
             }
         }
 

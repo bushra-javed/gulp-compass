@@ -1,18 +1,56 @@
-$h1-font:1.6rem;
- $h2-font:1.4rem;
- $h3-font:1.3rem;
- $h4-font:1.2rem;
- $h5-font:1.1rem;
+$h1-font:1.8rem;
+ $h2-font:1.6rem;
+ $h3-font:1.4rem;
+ $h4-font:1.3rem;
+ $h5-font:1.2rem;
  $h6-font:1.1rem;
  $a-font:1rem;
  $li-font:1rem;
  $button-font:1rem;
  $i-font:1rem ;
  $span-font:1rem ;
-  
-$p-font:1.9rem;
+ $p-font:1rem;
+ h1{
+  font-size:    $h1-font; 
+ }
+
+
+ h2{
+    font-size:    $h2-font; 
+   }
+   h3{
+    font-size:    $h3-font; 
+   }
+   h4{
+    font-size:    $h4-font; 
+   }
+   h5{
+    font-size:    $h5-font; 
+   }
+   h6{
+    font-size:    $h6-font; 
+   }
+   p{
+    font-size:    $p-font; 
+   }
+   a{
+    font-size:    $a-font; 
+   }
+
+   li{
+    font-size:    $li-font; 
+   }
+span{
+    font-size:    $span-font; 
+   }
+
+button{
+    font-size:    $button-font; 
+   }
+
+
 :root{
-    font-size: 20px;
+    font-size: 16px;
 }
 
 $red: #FF0000;

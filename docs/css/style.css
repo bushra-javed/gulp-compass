@@ -1,5 +1,49 @@
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
 :root {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
@@ -278,7 +322,7 @@ article p a:visited {
   }
   section#section-1 .section-1 {
     height: 110vh !important;
-    height: 33rem !important;
+    height: 31rem !important;
     position: relative !important;
   }
   section#section-1 .section-1 .bg-image {
@@ -307,9 +351,24 @@ article p a:visited {
     font-size: 1.5rem;
     margin-top: 10px !important;
   }
-
+}
+@media screen and (max-width: 576px) {
   :root {
     font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 776px) {
+  .bg-path {
+    width: 70% !important;
+  }
+
+  :root {
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  :root {
+    font-size: 20px !important;
   }
 }
 .responsive-image__inner {

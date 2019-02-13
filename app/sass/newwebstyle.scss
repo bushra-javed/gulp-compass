@@ -141,10 +141,12 @@ section#section-2 {
             color: #444444;
             margin: auto;
             margin-top: 10px;
-            @include bp(small){
 
-                @include size(80%,90%);
-                                    }
+            @include bp(small) {
+
+                @include size(80%, 90%);
+            }
+
             .img-thumbnail1 {
                 margin: 10px;
                 padding: 10px !important;
@@ -159,17 +161,19 @@ section#section-2 {
                     // line-height: 70%;
                     background-color: #444444;
                     box-shadow: 0 10px 6px -6px #777;
-                    @include bp(small){
 
-                        @include size(50%,50%);
-                                            }
+                    @include bp(small) {
+
+                        @include size(50%, 50%);
+                    }
+
                     img {
                         height: 100%;
                         width: 100%;
                         border-radius: 50%;
                         box-shadow: 0 10px 6px -6px #777;
-                        
-                                                                        &:hover {
+
+                        &:hover {
                             transform: scale(.95);
                         }
                     }
@@ -272,17 +276,17 @@ section#section-3 {
                 width: 100%;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
-            
-            @include bp(medium){
-                background: url("../images/hero_i8j92a_c_scale\,w_952.jpg");
-                border:1px solid red;
-            }
+
+                @include bp(medium) {
+                    background: url("../images/hero_i8j92a_c_scale\,w_952.jpg");
+                    border: 1px solid red;
+                }
 
 
-            @include bp(small){
-                background: url("../images/hero_i8j92a_c_scale\,w_749.jpg");
-                border:1px solid green;
-            }
+                @include bp(small) {
+                    background: url("../images/hero_i8j92a_c_scale\,w_749.jpg");
+                    border: 1px solid green;
+                }
             }
 
             .wrapper-for-path-text {
@@ -291,10 +295,12 @@ section#section-3 {
                 width: 70%; //   
 
                 height: 100%;
-                @include bp(small){
-                    
+
+                @include bp(small) {
+
                     width: 100%; //   
-                }   
+                }
+
                 //                   border: 11px solid green;
                 box-sizing: border-box;
 
@@ -321,6 +327,7 @@ section#section-3 {
                     align-items: center;
                     justify-content: center;
                     @extend .inner-common;
+
                     .v-a {
                         @include vertical-center;
 
@@ -343,11 +350,16 @@ section#section-4 {
     margin-top: 50px;
 
     .col1 {
+
         // text-align: center;
-        font-size: .8rem;
+        p {
+            font-size: .8rem;
+
+        }
+
         color: #858585;
         border-right: 1px solid lighten(#858585, 40%);
-
+        font-family: sans-serif;
     }
 
     .col2 {
@@ -387,39 +399,47 @@ section#section-4 {
 section#section-5 {
     .container-fluid {
         margin-top: 80px;
-//@extend
+        //@extend
 
 
 
-//@extend
+        //@extend
         .section-5 {
             position: relative;
-            height: 40vw;
+
+            height: 40vh;
+            height: 25rem;
+
+            @include bp(small) {
+                height: 20rem;
+
+            }
 
             .bg-image {
-// @include responsive(background,url("../images/women-right.jpg"),url("../images/women-right_oof5qc_c_scale\,w_916.jpg"),url("../images/women-right_oof5qc_c_scale\,w_626.jpg"));
+                // @include responsive(background,url("../images/women-right.jpg"),url("../images/women-right_oof5qc_c_scale\,w_916.jpg"),url("../images/women-right_oof5qc_c_scale\,w_626.jpg"));
                 background: url("../images/women-right.jpg") center top;
                 height: 100%;
                 width: 100%;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
 
-                @include bp(medium){
+                @include bp(medium) {
                     background: url("../images/women-right_oof5qc_c_scale\,w_916.jpg") center top;
                     // background-size: 100% 100%;
-background-size: cover;
-                 //   border:1px solid red;
+                    // background-size: cover;
+                    //   border:1px solid red;
                 }
-                @include bp(small){
-                   // border:1px solid green;
-                    background:url("../images/women-right_oof5qc_c_scale\,w_626.jpg") center top;
-                background-size: cover;    
+
+                @include bp(small) {
+                    // border:1px solid green;
+                    background: url("../images/women-right_oof5qc_c_scale\,w_626.jpg") center top;
+                    // background-size: cover;    
                 }
-                
-                
-                
-                
-                
+
+
+
+
+
 
             }
 
@@ -433,16 +453,17 @@ background-size: cover;
                 box-sizing: border-box;
 
                 .bg-path {
-            position: relative;
+                    position: relative;
 
                     -webkit-clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
                     clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
                     background-color: $color-secondary;
                     height: 100%;
-                    width: 60%; //
+                    width: 65%; //
+
                     opacity: .9;
                 }
-                
+
                 .inner {
                     left: 2rem;
                     display: flex;
@@ -450,16 +471,17 @@ background-size: cover;
                     justify-content: center;
                     @extend .inner-common;
                     color: $color-dark;
+
                     // base medium and small sequence for responsive
                     // border: 1px solid red;
                     .v-a {
-                        @include responsive(font-size, 1.5rem, 1.2rem,.8rem);
+                        // @include responsive(font-size, 1.5rem, 1.2rem,.8rem);
 
                         @include vertical-center;
                         // border: 1px solid red;
 
 
-                        h3{
+                        h3 {
                             // margin-left: 7rem;
                             text-align: center;
                         }
@@ -482,7 +504,7 @@ section#section-6 {
         //    float: left;
         // margin-top: -8px;
         // padding: $padding-section;
-        
+
         .vert-nav-right {
             border-left: 1px solid lighten(#858585, 20%);
             // border: 1px solid red;
@@ -495,11 +517,12 @@ section#section-6 {
                 line-height: 1rem;
                 font-size: .8rem;
                 color: #858585;
-                @include bp(small){
-text-align: justify;
-margin: 10px;
+
+                @include bp(small) {
+                    text-align: justify;
+                    margin: 10px;
                     @include column-count(2);
-                                        }
+                }
             }
         }
 
@@ -684,7 +707,15 @@ section#section-7 {
 
         .section-7 {
             position: relative;
-            height: 40vw;
+            height: 40vh;
+            height: 25rem;
+
+
+            @include bp(small) {
+                height: 18rem;
+
+            }
+
             .bg-image {
 
                 background: url("../images/woman-banner.jpg") center top;
@@ -692,39 +723,39 @@ section#section-7 {
                 width: 100%;
                 background-repeat: no-repeat;
                 background-size: 100% 100%;
-                @include bp(medium){
-                                    background: url("../images/woman-banner_scbfj2_c_scale\,w_1139.jpg") center top;
-                                    background-repeat: no-repeat;
-                    
+
+                @include bp(medium) {
+                    background: url("../images/woman-banner_scbfj2_c_scale\,w_1139.jpg") center top;
+                    //  /   background-repeat: no-repeat;
+
+                }
+
+                @include bp(small) {
+                    background: url("../images/woman-banner-m.jpg") center top;
+                    // background-repeat: no-repeat;
+
+                }
             }
-            @include bp(small){
-                                background: url("../images/woman-banner-m.jpg") center top;
-                                background-repeat: no-repeat;
-                
-        }
-        @include bp(xsmall){
-                            background: url("../images/woman-banner-m.jpg") center top;
-                            background-repeat: no-repeat;
-            
-    }
-    }
+
             .wrapper-for-path-text {
                 position: absolute;
                 top: 0;
                 right: 0;
                 width: 100%; //                border: 11px solid green;
-height: 100%;
+                height: 100%;
+                box-sizing: border-box;
+
                 .bg-path {
 
                     -webkit-clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
                     clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
                     background-color: $color-dark;
                     background-color: $color-primary;
-            position: relative ;
+                    position: relative;
                     height: 100%;
-                                   width: 60%; //
+                    width: 50%; //
                     opacity: .7;
-            
+
                 }
 
                 .inner {
@@ -733,6 +764,7 @@ height: 100%;
                     align-items: center;
                     justify-content: center;
                     @extend .inner-common;
+
                     .v-a {
 
                         @include vertical-center;
@@ -749,57 +781,62 @@ height: 100%;
 }
 
 
-section#section-8{
+section#section-8 {
 
     .list-for-all {
         margin-top: 80px;
-        
+
         box-sizing: border-box;
-        
+
         .detail-1 {
             h4 {
                 text-align: center;
                 color: #333;
             }
-            
+
             ul {
                 padding: 30px;
-                
+
                 li {
                     font-size: .8rem;
                     color: #858585;
                 }
             }
-            
+
             border-right: 1px solid lighten(#858585, 40%);
         }
-        
+
         .detail-last {
             border-right: none; // 1px solid #858585;
-            
+
         }
     }
 }
-    
-    
-    
 
-section#section-9
-{
+
+
+
+section#section-9 {
     #two-column {
-        border:1px solid $color-dark;
+        border: 1px solid $color-dark;
         @include contrasted(#fff);
         @include column-count(3);
         width: 80%;
         text-align: left;
-        font-size: .8rem;
+
+        P {
+            font-size: .8rem;
+
+        }
+
         color: #858585;
-        margin: 10px auto; 
-        padding: 10px 20px; 
+        margin: 10px auto;
+        padding: 10px 20px;
         @include box-shadow($color-dark 2px 2px 10px);
         @include border-radius(10px);
-        @include bp(small){
-        @include column-count(2);
+
+        @include bp(small) {
+            @include column-count(2);
 
         }
     }
@@ -811,11 +848,11 @@ section#section-9
     @include background-image(linear-gradient(left, $color-dark 30%, $color-secondary));
 }
 
-    // end here
+// end here
 // Set up base fontsize
-   
-    footer {
-        @extend %main-green-gradient;
+
+footer {
+    @extend %main-green-gradient;
 }
 
 .main-title {
@@ -829,29 +866,3 @@ section#section-9
 
 
 //720 and above
-@media screen and (max-width:576px) {
-  
-
-    :root {
-        font-size: 14px !important;
-    }
-}
-
-
-@media screen and (min-width:776px) {
-  
-    .bg-path {
-        width: 70% !important;
-    }
-
-    :root {
-        font-size: 18px !important;
-    }
-}
-
-//size 1000 and larger
-@media screen and (min-width:1000px) {
-    :root {
-        font-size: 20px !important;
-    }
-}

@@ -11,7 +11,7 @@
 
         .section-1 {
             height: 110vh !important;
-            height: 33rem !important; //50rem;///
+            height: 31rem !important; //50rem;///
             position: relative !important;
 
             .bg-image {
@@ -47,14 +47,43 @@
         }
     }
 
-    :root {
-        font-size: 16px !important;
-    }
+    // :root {
+    //     font-size: 16px !important;
+    // }
 
 
 
 }
 
+
+
+
+@media screen and (max-width:576px) {
+  
+
+    :root {
+        font-size: 16px !important;
+    }
+}
+
+
+@media screen and (min-width:776px) {
+  
+    .bg-path {
+        width: 70% !important;
+    }
+
+    :root {
+        font-size: 18px !important;
+    }
+}
+
+//size 1000 and larger
+@media screen and (min-width:1000px) {
+    :root {
+        font-size: 20px !important;
+    }
+}
 //size 720 and larger
 
 

@@ -1,5 +1,49 @@
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+}
+
+li {
+  font-size: 1rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1rem;
+}
+
 :root {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
@@ -278,7 +322,7 @@ article p a:visited {
   }
   section#section-1 .section-1 {
     height: 110vh !important;
-    height: 33rem !important;
+    height: 31rem !important;
     position: relative !important;
   }
   section#section-1 .section-1 .bg-image {
@@ -307,9 +351,24 @@ article p a:visited {
     font-size: 1.5rem;
     margin-top: 10px !important;
   }
-
+}
+@media screen and (max-width: 576px) {
   :root {
     font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 776px) {
+  .bg-path {
+    width: 70% !important;
+  }
+
+  :root {
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  :root {
+    font-size: 20px !important;
   }
 }
 .responsive-image__inner {
@@ -558,9 +617,12 @@ section#section-4 {
   margin-top: 50px;
 }
 section#section-4 .col1 {
-  font-size: .8rem;
   color: #858585;
   border-right: 1px solid #ebebeb;
+  font-family: sans-serif;
+}
+section#section-4 .col1 p {
+  font-size: .8rem;
 }
 section#section-4 .col2 {
   text-align: center;
@@ -587,7 +649,13 @@ section#section-5 .container-fluid {
 }
 section#section-5 .container-fluid .section-5 {
   position: relative;
-  height: 40vw;
+  height: 40vh;
+  height: 25rem;
+}
+@media only screen and (max-width: 48em) {
+  section#section-5 .container-fluid .section-5 {
+    height: 20rem;
+  }
 }
 section#section-5 .container-fluid .section-5 .bg-image {
   background: url("../images/women-right.jpg") center top;
@@ -599,13 +667,11 @@ section#section-5 .container-fluid .section-5 .bg-image {
 @media only screen and (max-width: 62em) {
   section#section-5 .container-fluid .section-5 .bg-image {
     background: url("../images/women-right_oof5qc_c_scale,w_916.jpg") center top;
-    background-size: cover;
   }
 }
 @media only screen and (max-width: 48em) {
   section#section-5 .container-fluid .section-5 .bg-image {
     background: url("../images/women-right_oof5qc_c_scale,w_626.jpg") center top;
-    background-size: cover;
   }
 }
 section#section-5 .container-fluid .section-5 .wrapper-for-path-text {
@@ -622,7 +688,7 @@ section#section-5 .container-fluid .section-5 .wrapper-for-path-text .bg-path {
   clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
   background-color: #D7CEC7;
   height: 100%;
-  width: 60%;
+  width: 65%;
   opacity: .9;
 }
 section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner {
@@ -633,22 +699,11 @@ section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner {
   color: #76323f;
 }
 section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a {
-  font-size: 1.5rem;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-@media only screen and (max-width: 62em) {
-  section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (max-width: 48em) {
-  section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a {
-    font-size: 0.8rem;
-  }
 }
 section#section-5 .container-fluid .section-5 .wrapper-for-path-text .inner .v-a h3 {
   text-align: center;
@@ -737,7 +792,13 @@ section#section-7 .container-fluid {
 }
 section#section-7 .container-fluid .section-7 {
   position: relative;
-  height: 40vw;
+  height: 40vh;
+  height: 25rem;
+}
+@media only screen and (max-width: 48em) {
+  section#section-7 .container-fluid .section-7 {
+    height: 18rem;
+  }
 }
 section#section-7 .container-fluid .section-7 .bg-image {
   background: url("../images/woman-banner.jpg") center top;
@@ -749,19 +810,11 @@ section#section-7 .container-fluid .section-7 .bg-image {
 @media only screen and (max-width: 62em) {
   section#section-7 .container-fluid .section-7 .bg-image {
     background: url("../images/woman-banner_scbfj2_c_scale,w_1139.jpg") center top;
-    background-repeat: no-repeat;
   }
 }
 @media only screen and (max-width: 48em) {
   section#section-7 .container-fluid .section-7 .bg-image {
     background: url("../images/woman-banner-m.jpg") center top;
-    background-repeat: no-repeat;
-  }
-}
-@media only screen and (max-width: 36em) {
-  section#section-7 .container-fluid .section-7 .bg-image {
-    background: url("../images/woman-banner-m.jpg") center top;
-    background-repeat: no-repeat;
   }
 }
 section#section-7 .container-fluid .section-7 .wrapper-for-path-text {
@@ -770,6 +823,7 @@ section#section-7 .container-fluid .section-7 .wrapper-for-path-text {
   right: 0;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 section#section-7 .container-fluid .section-7 .wrapper-for-path-text .bg-path {
   -webkit-clip-path: polygon(46% 0, 66% 0, 100% 100%, 79% 100%, 0 62%, 0 44%);
@@ -778,7 +832,7 @@ section#section-7 .container-fluid .section-7 .wrapper-for-path-text .bg-path {
   background-color: #565656;
   position: relative;
   height: 100%;
-  width: 60%;
+  width: 50%;
   opacity: .7;
 }
 section#section-7 .container-fluid .section-7 .wrapper-for-path-text .inner {
@@ -829,7 +883,6 @@ section#section-9 #two-column {
   column-count: 3;
   width: 80%;
   text-align: left;
-  font-size: .8rem;
   color: #858585;
   margin: 10px auto;
   padding: 10px 20px;
@@ -839,6 +892,9 @@ section#section-9 #two-column {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+}
+section#section-9 #two-column P {
+  font-size: .8rem;
 }
 @media only screen and (max-width: 48em) {
   section#section-9 #two-column {
@@ -861,24 +917,4 @@ footer, .main-title {
   text-align: center;
   color: #fff;
   padding: .5rem .5rem;
-}
-
-@media screen and (max-width: 576px) {
-  :root {
-    font-size: 14px !important;
-  }
-}
-@media screen and (min-width: 776px) {
-  .bg-path {
-    width: 70% !important;
-  }
-
-  :root {
-    font-size: 18px !important;
-  }
-}
-@media screen and (min-width: 1000px) {
-  :root {
-    font-size: 20px !important;
-  }
 }
